@@ -23,7 +23,12 @@
 
         #textArea {
             background-color: red;
-            height: 150px;
+            height: 100px;
+            width: 250px;
+        }
+
+        #userInfo {
+            background-color: grey;
             width: 250px;
         }
     </style>
@@ -66,6 +71,36 @@
         <textarea name="comment" id="" cols="30" rows="3"></textarea>
     </div>
 
-    
+    <h2>Select</h2>
+    <select name="iceCreamSnack" id="iceCreamSnack">
+        <option>Cookies and Cream</option>
+        <option>Chocolate Chip Cookie Doe</option>
+        <option>Strawberry Cheesecake</option>
+        <option>Rocky Road</option>
+    </select>
+
+    <h2>Common Form</h2>
+    <div id="userInfo">
+        <form action="/process" method="post">
+            <div>
+                <label>Name: </label>
+                <input type="text" name="name" 
+                placeholder="Your name..." >
+            </div>
+            <div>
+                <label>Email: </label>
+                <input type="text" name="email" 
+                placeholder="Your email..." >
+            </div>
+            <div>
+                <input type="checkbox" name="offers" 
+                id="offers" checked >
+                <label for="offers">I would like 
+                to receive email offers!</label>
+            </div>
+            <input type="submit" value="Sign Up!" >
+        </form>
+        
+    </div>
 </body>
 </html>
