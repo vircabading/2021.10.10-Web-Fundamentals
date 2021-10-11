@@ -13,6 +13,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>.: Forms :.</title>
+
+    <style type="text/css">
+        #font {
+            background-color: yellow;
+            height: 75px;
+            width: 150px;
+        }
+
+        
+    </style>
 </head>
 <body>
     <h1>Common Inputs</h1>
@@ -31,5 +41,22 @@
 
     <h2>Color</h2>
     <input type="color" name="text_color">
+
+    <h2>Radio</h2>
+    <div id="font">
+        <p>Font</p>
+        <input type="radio" name="font" value="bold" id="bold">
+            <label for="bold"><strong>Bold</strong></label>
+        <input type="radio" name="font" value="normal" id="normal">
+            <label for="normal">Normal</label>
+    </div>
+
+    <div id='accept'>
+        <h2>Checkbox</h2>
+        <input type="checkbox" name="accept" id="accept">
+            <label for="accept">I Agree</label>
+    </div>
+
+    
 </body>
 </html>
